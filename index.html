@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Final Project.css">
+    <title>Zaky's Personal Space</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome message (added with JS) -->
+        <div id="welcomeMessage" class="welcome-message" style="display: none;">
+            Welcome to my personal space! 🌟
+        </div>
+
+        <div class="header">
+            <h1>Zaky's Personal Website</h1>
+            <h2>A Simple Digital Space</h2>
+        </div>
+
+        <!-- New Interactive JS Function - Easily visible at top -->
+        <div class="interactive-section">
+            <h3>🎯 Personal Message Generator</h3>
+            <p>Enter your name and I'll create a personalized message for you!</p>
+            <div class="input-group">
+                <input type="text" id="userName" placeholder="Enter your name here..." maxlength="30">
+                <button onclick="generatePersonalMessage()">Generate Message</button>
+            </div>
+            <div id="personalMessageResult" class="result"></div>
+        </div>
+
+        <div class="content-section">
+            <div class="manifesto">
+                <p>Life is about continuous learning and growth. Every challenge we face is an opportunity to become stronger. <span class="highlight">Knowledge is power</span>, but wisdom comes from applying that knowledge thoughtfully.</p>
+                
+                <p>In this digital age, we must remember that technology serves humanity, not the other way around. <span class="quote">"The best way to predict the future is to create it."</span> We shape our destiny through our choices and actions.</p>
+                
+                <p>Whether in academics, career, or personal relationships, persistence and authenticity are key. Every small step forward matters, and every moment of learning contributes to our journey.</p>
+                
+                <div class="center-text">
+                    Keep Learning. Keep Growing. <strong>Keep Trying.</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="supplies-section">
+            <div class="supplies-list">
+                <h4>📚 Current Learning Goals</h4>
+                <ol>
+                    <li>I'm probably gonna learn more japanese</li>
+                    <li>Learn more Japanese</li>
+                    <li>Yeah, learn japanese for work</li>
+                    <li>And maybe some web development on the side</li>
+                </ol>
+            </div>
+
+            <div class="supplies-list">
+                <h4>🛠️ Skills & Interests</h4>
+                <table>
+                    <tr>
+                        <th>Hobbies</th>
+                        <th>Interests</th>
+                    </tr>
+                    <tr>
+                        <td>Piano</td>
+                        <td>MOBA games</td>
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>Family</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h4>💡 Interactive Light Demo</h4>
+            <p id="lightStatus">Click the buttons to control the light!</p>
+            <div id="lightDisplay" class="light-display">💡</div>
+            <div class="controls">
+                <button onclick="turnLightOn()">Turn On</button>
+                <button onclick="turnLightOff()">Turn Off</button>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <button onclick="showMotivation()">Get Daily Motivation</button>
+            <p id="motivationText" style="margin-top: 15px; font-style: italic; color: #7f8c8d;"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Zaky Athaya Kautsar 23229622</p>
+    </footer>
+
+    <script src="Final Project.js"></script>
+</body>
+</html>
